@@ -2,20 +2,23 @@
 <html>
 
 <head>
-	<meta charset="UTF-8"></meta>
+	<meta charset="UTF-8"> <!-- The closing tab </meta> was not needed here -->
 	<title>Part One</title>
 </head>
 
 <body>
-	<h3> Title
+	<h3> Title <h3> <!-- Added a closing tag for h3 -->
 		<p> Content goes here! </p>
-		<ul class="more_info">
-			<li>
-				<a href="https://www.website1">resource 1</a>
-			</li>
-			<li>
-				<a href="https://www.website2">resource 2</a>
-		</ul>
+		<div class="more_info"> <!-- ul cannot make a class, only div can so I added the opening tag -->
+			<ul> <!-- had to shift the opening tag for ul -->
+				<li>
+					<a href="https://www.website1">resource 1</a>
+				</li>
+				<li>
+					<a href="https://www.website2">resource 2</a>
+				</li> <!-- Added a closing tag for li -->
+			</ul>
+		</div> <!-- had to add the closing tag for div as well -->
 </body>
-
+	
 </html>
